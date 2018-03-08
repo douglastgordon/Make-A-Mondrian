@@ -84,7 +84,6 @@ const isHorizontalLine = (line) => {
 const colorSquares = () => {
   const xPairs = getPairs(getXValues())
   const yPairs = getPairs(getYValues())
-  console.log(getXValues(), getYValues())
   xPairs.forEach((xPair) => {
     yPairs.forEach((yPair) => {
       const [x1, x2] = xPair
@@ -138,13 +137,24 @@ const getYValues = () => {
 }
 
 const uniqueSorted = (arr) => {
-  return [...new Set(arr)].sort()
+  return [...new Set(arr)].sort((a, b) => a - b)
 }
 
+const clearCanvas = () => {
+  context.clearRect(0, 0, canvasWidth, canvasHeight)
+  context.fillStyle = 'rgba(0,0,0,1)'
+  context.fillRect(0, 0, canvasWidth, canvasHeight)
+  lines = []
+}
+
+
 const run = () => {
+  clearCanvas()
   drawMajorLines()
   // drawMinorLines()
   colorSquares()
 }
 
+
+window.addEventListener("click", run)
 run()

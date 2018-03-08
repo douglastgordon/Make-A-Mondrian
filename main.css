@@ -1,6 +1,15 @@
 @font-face {
-  font-family: "Bellerose";
-  src: url("./Bellerose.ttf");
+  font-family: "atlasnormal";
+  src: url("./atlasnormal.ttf");
+}
+
+@font-face {
+  font-family: "atlasoutlined";
+  src: url("./atlasoutlined.ttf");
+}
+
+html {
+  cursor: pointer;
 }
 
 .frame {
@@ -14,7 +23,9 @@
 }
 
 h1 {
-  font-family: "Bellerose";
+  text-transform: uppercase;
+  font-family: "atlasoutlined";
   text-align: center;
-  font-size: 50px;
+  font-size: 85px;
+  letter-spacing: 12px;
 }
