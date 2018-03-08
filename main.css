@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Bellerose";
+  src: url("./Bellerose.ttf");
+}
+
+.frame {
+  width: 600px;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Bellerose";
+  text-align: center;
+  font-size: 50px;
+}
