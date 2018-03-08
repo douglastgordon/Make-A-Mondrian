@@ -1,11 +1,11 @@
 @font-face {
   font-family: "atlasnormal";
-  src: url("./atlasnormal.ttf");
+  src: url("./fonts/atlasnormal.ttf");
 }
 
 @font-face {
   font-family: "atlasoutlined";
-  src: url("./atlasoutlined.ttf");
+  src: url("./fonts/atlasoutlined.ttf");
 }
 
 html {
